@@ -1,9 +1,6 @@
 ---
 tasks:
-- id: 1
-  title: Turing homework
-  description: mod 2 prep
-- id: 2
-  title: clean
-  description: cleaning is not fun
-total: 2
+- id: 3
+  title: new task
+  description: description 1
+total: 3
