@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/application.css">
+  <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <title>My Sinatra Application</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container">
+  <header class="jumbotron">
+      <div class="container">
+
+        <h1> All Tasks </h1>
+
+        
+          <h3>3: <a href="/tasks/3">new task</a></h3>
+          <a href="/tasks/3/edit">Edit</a>
+
+        <form action="/tasks/3" method="post">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="Delete">
+        </form>
+
+        
+      </div>
+
+    </header>
+</div>
+
+  </div>
+</body>
+</html>
