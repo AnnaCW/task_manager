@@ -7,6 +7,7 @@ require 'minitest/pride'
 require 'tilt/erb'
 require 'capybara/dsl'
 
+
 module TestHelpers
   def teardown
     task_manager.delete_all
@@ -15,8 +16,8 @@ module TestHelpers
   end
 
   def task_manager
-    database = YAML::Store.new('db/task_manager_test')
-    #creates a new db file for tests
+    # database = YAML::Store.new('db/task_manager_test')
+    database = Sequel.postgres('task_manager_test')
     @task_manager ||= TaskManager.new(database)
   end
 end
